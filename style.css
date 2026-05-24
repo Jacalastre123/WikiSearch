@@ -1,0 +1,103 @@
+    body {
+            font-family: lato;
+            background-size: cover;
+            backdrop-filter: blur(30px);
+            background-color: azure;
+            
+        }
+       
+    
+        .card {
+            background-color: rgba(255, 255, 255, 0.503);
+            height: 20vh;
+            width: 95vw;
+            padding: 5px;
+            margin: 10px;
+            border-radius: 2px;
+            cursor: pointer;
+            background-size: cover;
+           position: relative;
+           z-index: 1;
+           background-position: center center;
+           overflow: clip;
+          
+           
+        }
+
+        .card * {
+            z-index: 1000;
+            color: white;
+            position: relative;
+            text-align: left;
+        }
+
+        .card::after {
+            content: " ";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+       
+            top: 0;
+            left: 0;
+            z-index: 1;
+            background-color: rgba(0, 0, 0, 0.796);
+            backdrop-filter: blur(5px)
+        }
+
+        .flex {
+          
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        header {
+              background-color: rgba(255, 255, 255, 0.484);
+            display: flex;
+            padding: 5px;
+            backdrop-filter: blur(20px);
+            align-items: center;
+            justify-content: space-between;
+         
+        }
+        #search {
+            font-size: 2em;
+            width: 30vw;
+        }
+
+        .score {
+            font-size: 1.5em;
+            text-align: center;
+           
+        }
+        .score * {
+             margin: 1px;
+
+        }
+
+        #score {
+            font-size: 1.2em;
+        }
+
+        .None {
+            font-size: 2em;
+            text-align: center;
+        }
+
+        #searchCont {
+            text-align: center;
+        }
+
+        nav button {
+            font-size: 1.5em;
+        }
+       footer {
+        backdrop-filter: blur(50px);
+        background-color: rgba(255,255,255,0.5);
+        padding: 5px;
+        width: 95vw;
+       }
+      #infoStart {
+        text-align: center;
+       }
