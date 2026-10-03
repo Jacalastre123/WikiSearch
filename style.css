@@ -2,13 +2,13 @@
             font-family: lato;
             background-size: cover;
             backdrop-filter: blur(30px);
-            background-color: azure;
+        
             
         }
        
     
         .card {
-            background-color: rgba(255, 255, 255, 0.503);
+            background-color: lightblue;
             height: 20vh;
             width: 95vw;
             padding: 5px;
@@ -53,7 +53,7 @@
         }
 
         header {
-              background-color: rgba(255, 255, 255, 0.484);
+              background-color: lightblue;
             display: flex;
             padding: 5px;
             backdrop-filter: blur(20px);
@@ -101,3 +101,8 @@
       #infoStart {
         text-align: center;
        }
+
+        #imag {
+            max-height: 20vh;
+            
+        }
