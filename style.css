@@ -28,7 +28,9 @@
         }
 
 
-
+        .card div {
+            width: 50vw;
+        }
         .card * {
             z-index: 1000;
             color: white;
