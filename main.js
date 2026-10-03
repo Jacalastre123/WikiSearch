@@ -101,13 +101,10 @@ if (isCate === "search") {
         })
     }
     }
-    search.parentElement.addEventListener("submit", async event => {
+
+    document.getElementById("searchBut").addEventListener("click", async event => {
         event.preventDefault()
         await searchWiki(search.value, "search", 10, false)
     })
    
-
-    document.addEventListener("click", async event => {
-
-     
-    })
+    
