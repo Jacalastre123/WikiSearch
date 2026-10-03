@@ -37,6 +37,7 @@ if (isCate === "search") {
              const cardClone = card.content.cloneNode(true)
              const info = cardClone.querySelector("#info")
        const title = cardClone.querySelector("#title")
+            const imag = cardClone.querySelector("#imag")
               cardClone.querySelector(".card").addEventListener("click", e => {
                 window.open(response[3][index])
                 score += 5
@@ -49,8 +50,8 @@ if (isCate === "search") {
                 .then(res => res.json())
                 .then(sum => {
 
-                    cardClone.querySelector(".card").style.backgroundImage = "url('" + sum.originalimage?.source + "')"
-                    document.body.style.backgroundImage = "url('" + sum.originalimage?.source + "')"
+                    imag.src = sum.originalimage?.source
+                  
               
                   console.log(sum)
                     if (sum.extract.split("")[200]) {
