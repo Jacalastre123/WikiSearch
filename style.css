@@ -20,9 +20,14 @@
            z-index: 1;
            background-position: center center;
            overflow: clip;
-          
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
            
         }
+
+
 
         .card * {
             z-index: 1000;
